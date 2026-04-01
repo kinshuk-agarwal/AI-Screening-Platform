@@ -1,7 +1,7 @@
 [project]
-name = "phidataagents"
+name = "phidata-recruitment-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI backend for AI Recruitment System"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -10,6 +10,13 @@ dependencies = [
     "openai>=1.58.1",
     "phidata>=2.7.5",
     "pypdf2>=3.0.1",
-    "streamlit>=1.41.1",
-    "streamlit-pdf-viewer>=0.0.19",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "redis>=5.0.1",
+    "faiss-cpu>=1.7.4",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.5.3",
+    "numpy>=1.26.3",
+    "requests>=2.31.0",
+    "python-multipart>=0.0.9"
 ]
