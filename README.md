@@ -55,10 +55,18 @@ In v2, candidate ranking was migrated away from unpredictable LLM guessing into 
 
 ## Setup Instructions (Docker)
 
+<<<<<<< HEAD
 You can launch the entire stack in 3 commands.
 
 1. **Clone the repository**
 2. **Create the environment variables:** Make a copy of `.env.example` as `.env`.
+=======
+## Installation 🛠️
+
+### Run Locally 💻
+
+1. Clone this repository:
+>>>>>>> 05eda2dfbc3be16d4b41ccb7fa573b46c611cd29
    ```bash
    cp .env.example .env
    ```
@@ -75,8 +83,76 @@ The Frontend will be available at `http://localhost`, while all API endpoints na
 
 ## API Endpoint Reference
 
+<<<<<<< HEAD
 - `POST /api/analyze-jd` - Feed raw text, returns structural JSON.
 - `POST /api/add-candidate` - Consumes multipart/form-data containing PDF buffer, evaluates GitHub JSON.
 - `POST /api/compare-candidates` - Aggregates candidates against a JD baseline.
 - `POST /api/send-emails` - Evaluates the finalized batch of `selected_candidates` and dispatches acceptance emails dynamically via standard SMTP protocols inside the PhiData EmailAgent.
 - `POST /api/full-pipeline` - Takes all requirements and candidate payloads, looping through the pipeline concurrently to provide the resolved Dashboard data model in one HTTP boundary.
+=======
+4. Navigate to the cloned repository:
+   ```bash
+   cd AI-Based-Recruitment-System
+   ```
+
+5. Create a new virtual environment:
+   ```bash
+   uv venv --python 3.10
+   ```
+
+6. Activate the environment:
+   - On Linux/MacOS:
+     ```bash
+     source .venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     .venv\Scripts\activate
+     ```
+
+7. Install dependencies:
+   ```bash
+   uv install
+   ```
+
+8. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
+
+### Run with Docker 🐳
+
+#### Build Locally 🏗️
+1. Build the Docker image:
+   ```bash
+   docker build -t localmachine/ai_recruitment_team:main-latest .
+   ```
+
+2. Run the Docker container:
+   ```bash
+   docker run -p 7860:7860 localmachine/ai_recruitment_team:main-latest
+   ```
+
+#### Use Prebuilt Image 📦
+1. Pull the prebuilt image from DockerHub:
+   ```bash
+   docker pull manthan07/ai_recruitment_team:main-latest
+   ```
+
+2. Run the Docker container:
+   ```bash
+   docker run -p 7860:7860 manthan07/ai_recruitment_team:main-latest
+   ```
+
+---
+
+## Technologies Used 🛠️
+
+- **PhiData:** Agents (Resume Analyzer Agent, Email Agent, Scheduler Agent) and Tools (ZoomTool)
+- **Python** 🐍
+- **Pydantic** 📋
+- **PyPDF2** 📄
+- **Streamlit** 🌐
+
+---
+>>>>>>> 05eda2dfbc3be16d4b41ccb7fa573b46c611cd29
