@@ -26,26 +26,6 @@ To configure this application, the following credentials and accounts are requir
    - The app password is a 16-digit code generated through **[Google App Password](https://support.google.com/accounts/answer/185833)**.
    - Format: `afec wejf awoj fwrv` (use without spaces in the Streamlit app).
 
-### Zoom API Credentials 🎥:
-1. Create or use an existing Zoom account.
-2. Navigate to the **[Zoom App Marketplace](https://marketplace.zoom.us/)** and create a new app with **Server-to-Server OAuth**.
-3. Obtain the following credentials:
-   - Client ID
-   - Client Secret
-   - Account ID
-4. Add the following scopes to the app for Zoom meeting scheduling:
-   - `meeting:write:invite_links:admin`
-   - `meeting:write:meeting:admin`
-   - `meeting:write:meeting:master`
-   - `meeting:write:invite_links:master`
-   - `meeting:write:open_app:admin`
-   - `user:read:email:admin`
-   - `user:read:list_users:admin`
-   - `billing:read:user_entitlement:admin`
-   - `dashboard:read:list_meeting_participants:admin` (optional)
-
----
-
 ## Installation 🛠️
 
 ### Run Locally 💻
@@ -125,23 +105,5 @@ To configure this application, the following credentials and accounts are requir
 - **Pydantic** 📋
 - **PyPDF2** 📄
 - **Streamlit** 🌐
-
----
-
-## Features ✨
-
-- **Automated Resume Analysis:** 📄 Evaluate candidate resumes based on the provided job description.
-- **Email Notifications:** ✉️ Notify candidates of their selection status with detailed feedback.
-- **Zoom Meeting Scheduler:** 📅 Automatically schedule interviews with selected candidates.
-
----
-
-## Contribution 🤝
-
-Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
-
-## Final Note 📝:
-
-Thank you very much Shubham Sahoo for creating an amazing repository regarding [LLM Applications.](https://github.com/Shubhamsaboo/awesome-llm-apps)
 
 ---
